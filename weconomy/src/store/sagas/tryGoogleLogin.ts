@@ -27,7 +27,6 @@ function* workerGoogleLogin(action: any) {
                 encodeURIComponent(adduserQuery),
             )
             .then((res) => {
-              console.log(res, '3')
               updateAction.id = res.data.data.userAdd.id;
             });
         } else {
