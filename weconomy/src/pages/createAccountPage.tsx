@@ -23,8 +23,6 @@ const CreateAccountPage: React.FC = () => {
       setIncomeCounter(incomeCounter + 1);
     } else if (message === 'down' && incomeCounter > 1) {
       setIncomeCounter(incomeCounter - 1);
-    } else {
-      console.log('asdf');
     }
   };
 
