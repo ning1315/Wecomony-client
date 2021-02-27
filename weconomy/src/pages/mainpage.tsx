@@ -26,10 +26,6 @@ const MainPage: React.FC = () => {
   const { isMobile } = useMedia();
   const { y } = useScroll();
 
-  useEffect(() => {
-    console.log(y);
-  }, [y]);
-
   axios.defaults.withCredentials = true;
 
   const toAccountPage = () => {
