@@ -58,7 +58,6 @@ const AccountByDay = () => {
   );
 
   const handleDateChange = (date: Date | null) => {
-    console.log(date);
     setSelectedDate(date);
     dispatch(changeDetailDate(date));
   };
