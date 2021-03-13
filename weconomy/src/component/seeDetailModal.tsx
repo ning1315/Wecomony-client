@@ -65,10 +65,6 @@ const SeeDetailModal: React.FC = () => {
 
   const date = new Date(dateNow).toLocaleDateString();
 
-  useEffect(() => {
-    console.log(filterIncome, filterOutcome);
-  });
-
   return (
     <>
       {isOpen ? (
