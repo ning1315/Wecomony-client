@@ -159,7 +159,6 @@ const CreateAccount: React.FC<counter> = ({
         userId,
       );
       dispatch(createNewContent(value));
-      console.log(value);
       setIncome1({
         ...income1,
         category: '선택해주세요',
