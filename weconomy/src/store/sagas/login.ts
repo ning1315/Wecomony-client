@@ -43,7 +43,6 @@ function* workerLogin(action: any) {
     const getUserGroupsQuery = getUserGroups(updateAction.data.id)
     yield axios.post('https://sench.projects1faker.com/graphql?query=' +
     encodeURIComponent(getUserGroupsQuery)).then((res) => {
-      console.log(res.data.data.userGet[0])
       groupData = res.data.data.userGet[0].Meets
     
     })
