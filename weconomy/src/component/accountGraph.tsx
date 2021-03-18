@@ -49,11 +49,7 @@ const AccountGraph = () => {
       content?.dateTime.slice(5, 7) ===
       new Date().toLocaleDateString().slice(5, 7),
   );
-  /*
-  useEffect(() => {
-    console.log(CalculationWeek(groupNow[0].Contents));
-  }, []);
-*/
+
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue);
   };
