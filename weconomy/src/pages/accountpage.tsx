@@ -44,7 +44,6 @@ const AccountPage: React.FC = () => {
   useEffect(() => {
     dispatch(loadingWorkerStart());
     dispatch(getUserDataAgain(userData?.id));
-    console.log(groupData, 'asdasd');
   }, []);
 
   return (
