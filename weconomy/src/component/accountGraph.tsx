@@ -99,10 +99,6 @@ const AccountGraph = () => {
 
   const percent = getPercent();
 
-  useEffect(() => {
-    console.log(arr2);
-  }, []);
-
   let colorArr = ['#c44569', '#f3a683', '#f5cd79', '#9c88ff'];
 
   let arr2: any = [];
