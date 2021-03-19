@@ -52,7 +52,6 @@ const CreateNewAccountModal = () => {
       setCost('');
       closeModal();
       dispatch(createNewAccount(data));
-      console.log('성공!');
     }
   };
 
