@@ -20,7 +20,6 @@ function* workerGoogleLogin(action: any) {
         'https://sench.projects1faker.com/graphql?query=' +
           encodeURIComponent(testHasUserQuery),
       ).then((res) => {
-        console.log(res, '2')
         if (res.data.data.userGet.length === 0) {
           axios
             .post(
