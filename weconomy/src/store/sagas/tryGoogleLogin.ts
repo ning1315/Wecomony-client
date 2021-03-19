@@ -7,7 +7,6 @@ import testHasUser from '../../graphQuery/testHasUser';
 import getUserGroups from '../../graphQuery/getUserGroups'
 
 function* workerGoogleLogin(action: any) {
-  console.log(action, '1')
   const updateAction = Object.assign(action.data);
   const testHasUserQuery = testHasUser(action.data.email)
   const adduserQuery = adduser(
