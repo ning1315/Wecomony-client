@@ -31,15 +31,12 @@ function* workerCreateAccount(action: any){
           encodeURIComponent(getUserGroupsQuery)).then((res) => {
             groupData = res.data.data.userGet[0].Meets
             isCreate = true
-            console.log('원')
           })
         })
       })
     }
   })
-  console.log('투')
   yield delay(500)
-  console.log('쓰리')
   if(isCreate){
     yield put(getUserNowGroup(groupData))
   } 
