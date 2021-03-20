@@ -37,7 +37,6 @@ function* workerCreateAccount(action: any){
     }
   })
   yield delay(500)
-  console.log('쓰리')
   if(isCreate){
     yield put(getUserNowGroup(groupData))
   } 
