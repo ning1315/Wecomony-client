@@ -31,7 +31,6 @@ function* workerCreateAccount(action: any){
           encodeURIComponent(getUserGroupsQuery)).then((res) => {
             groupData = res.data.data.userGet[0].Meets
             isCreate = true
-            console.log('원')
           })
         })
       })
