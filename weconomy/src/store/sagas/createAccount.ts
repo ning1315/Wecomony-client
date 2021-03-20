@@ -36,7 +36,6 @@ function* workerCreateAccount(action: any){
       })
     }
   })
-  console.log('투')
   yield delay(500)
   console.log('쓰리')
   if(isCreate){
