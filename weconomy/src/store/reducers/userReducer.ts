@@ -32,7 +32,7 @@ const initialState = {
   meets : null
 }
 
-const userReducer: Reducer = (state = initialState, action) => {
+const userReducer: Reducer = (state: Props = initialState, action) => {
   switch (action.type) {
 
     case SUCCESS_LOGIN :
