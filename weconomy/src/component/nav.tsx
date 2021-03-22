@@ -13,7 +13,7 @@ import removeDropDown from '../util/Nav/dropDown';
 import NavToggleBtnSet from '../util/Nav/NavToggleBtnSet';
 import onClickProfile from '../util/Nav/onClickProfile';
 import { outOfUserModalOpen } from '../store/actions/modalActions';
-import OutOfUserModal from '../component/outOfUserModal'
+import OutOfUserModal from '../component/outOfUserModal';
 
 const Nav: React.FC = () => {
   window.onclick = removeDropDown;
@@ -23,9 +23,6 @@ const Nav: React.FC = () => {
     dispatch(loginModalOpen());
   };
   const isLogin = useSelector((state: RootState) => state.userStatus?.isLogin);
-  const userData = useSelector(
-    (state: RootState) => state.userStatus?.userData,
-  );
   const toAccountPage = () => {
     if (isLogin) {
       history.push('/selectaccount');
@@ -48,7 +45,7 @@ const Nav: React.FC = () => {
   };
 
   const toSignOutUser = () => {
-    dispatch(outOfUserModalOpen())
+    dispatch(outOfUserModalOpen());
   };
 
   const userImage = useSelector(
