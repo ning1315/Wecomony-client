@@ -15,8 +15,6 @@ function* workerCreateContent(action: any) {
           encodeURIComponent(createNewContents(action.value[i])),
       )
       .then((res) => {
-        console.log(action.value);
-        console.log(res.data.data.contentAdd.id);
         let body = {
           meetId: Number(action.value[0].meetId),
           contentId: res.data.data.contentAdd.id,
