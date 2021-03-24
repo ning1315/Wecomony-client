@@ -7,7 +7,6 @@ import testHasUser from '../../graphQuery/testHasUser';
 import getUserGroups from '../../graphQuery/getUserGroups'
 
 function* workerGoogleLogin(action: any) {
-  console.log(action, '1')
   const updateAction = Object.assign(action.data);
   const testHasUserQuery = testHasUser(action.data.email)
   const adduserQuery = adduser(
@@ -21,7 +20,6 @@ function* workerGoogleLogin(action: any) {
         'https://sench.projects1faker.com/graphql?query=' +
           encodeURIComponent(testHasUserQuery),
       ).then((res) => {
-        console.log(res, '2')
         if (res.data.data.userGet.length === 0) {
           axios
             .post(
