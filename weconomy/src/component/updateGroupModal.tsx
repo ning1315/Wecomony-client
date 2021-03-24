@@ -82,7 +82,6 @@ const UpdateGroupModal = () => {
         meetId: groups[0].id,
         userId: userNow?.id,
       };
-      console.log('삭제 시작');
       dispatch(deleteAccount(data));
       dispatch(updateGroupModalClose());
       history.push('/');

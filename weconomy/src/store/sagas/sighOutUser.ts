@@ -7,7 +7,6 @@ function* workerSighOutUser(action: any) {
   let isDeleteJoin: boolean = false;
   const deleteUserQuery = deleteUser(action.userId);
   const getOnlyGroupQuery = getOnlyGroups(action.userId);
-  console.log(action.userId);
 
   yield axios
     .post(
