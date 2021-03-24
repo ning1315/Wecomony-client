@@ -19,7 +19,6 @@ function* workerDeleteContent(action: any) {
   yield axios
     .post('https://sench.projects1faker.com/contentDel', body)
     .then((res) => {
-      console.log(res)
       axios
         .post(
           'https://sench.projects1faker.com/graphql?query=' +
