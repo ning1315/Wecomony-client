@@ -15,7 +15,6 @@ function* workerGetUserData(action : any){
     groupData = res.data.data.userGet[0].Meets;
   })
 
-  yield delay(100)
   yield put(getUserNowGroup(groupData))
 
 }
