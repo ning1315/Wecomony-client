@@ -32,7 +32,6 @@ function* workerOutOfAccount(action: actionType){
               groupData = res.data.data.userGet[0].Meets;
             })
   })
-  yield delay(500);
   yield put(getUserNowGroup(groupData))
   yield put(outOfAccountModalClose())
 }

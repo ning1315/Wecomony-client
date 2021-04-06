@@ -32,10 +32,8 @@ function* workerCreateContent(action: any) {
     .then((res) => {
       groupData = res.data.data.userGet[0].Meets;
     });
-  yield delay(100);
   yield put(getUserNowGroup(groupData));
-
-  yield delay(2000)
+  yield delay(1500)
   yield put(createSuccessModalClose())
 }
 
